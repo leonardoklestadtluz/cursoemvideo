@@ -6,8 +6,8 @@ Faça um programa que leia uma frase pelo teclado e mostre:
     [] em que posição ela aparece a última vez
 
 """
-frase = input('Escreva uma frase: ').upper()
-print('Letra "A" ocorre', frase.count('A'), 'vezes.')
-print('Primeira ocorrência da letra "A" no índice:', frase.find('A'))
-print('Última ocorrência da letra "A" no índice:', frase.rfind('A'))
+frase = str(input('Escreva uma frase: ')).upper().strip()
+print('Letra "A" ocorre', frase.count('A'), 'vez(es).')
+print('Primeira ocorrência da letra "A" no índice:', frase.find('A') + 1)
+print('Última ocorrência da letra "A" no índice:', frase.rfind('A') + 1)
 
