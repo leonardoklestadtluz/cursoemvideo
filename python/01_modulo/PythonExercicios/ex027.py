@@ -6,8 +6,10 @@ Exemplo:
     primeiro = Ana
     último = Souza
 """
-nomeCompleto = input('Informe seu nome completo: ').capitalize()
+nomeCompleto = str(input('Informe seu nome completo: ')).capitalize().strip()
+
+print(f'Analisando o nome: {nomeCompleto} ...')
 print('Primeiro nome =', nomeCompleto.split()[0])
-print('Último nome = ', nomeCompleto)
+print('Último nome = ', nomeCompleto.split()[-1])
 
 
