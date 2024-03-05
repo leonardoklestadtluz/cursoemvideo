@@ -7,3 +7,6 @@ Para salários superiores a R$ 1.250,00, calcule um aumento de 10%.
 Para salários inferiores ou iguaism o aumento é de até 15%
 
 """
+print('$$-$$' * 5)
+print('*** Aumentos Múltiplos ***')
+print('$$-$$' * 5)

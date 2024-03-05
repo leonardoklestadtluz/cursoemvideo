@@ -8,9 +8,9 @@ O programa deverá escrever na tela se o usuário venceu ou perdeu.
 from random import randint
 from time import sleep
 
-print('-=-' * 20)
+print('-=-' * 12)
 print('OLÁ! Digite um número entre 0 e 5!')
-print('-=-' * 20, '\n')
+print('-=-' * 12, '\n')
 
 numeroAleatorio = randint(0, 5)
 numeroDigitado = int(input('Qual número estou pensando? '))
