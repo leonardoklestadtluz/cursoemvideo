@@ -15,7 +15,7 @@ salarioAtual = float(input('Quanto você ganha por mês R$ '))
 anosPagamento = int(input('Em quantos anos pretende pagar? '))
 anoEmMeses = anosPagamento * 12
 percentualSalarial = (salarioAtual * 30) / 100
-print(percentualSalarial)
+print(f'Prestação mensal R$ {percentualSalarial}')
 valorPrestacao = valorCasa / anoEmMeses
 if valorPrestacao < percentualSalarial:
     print('PARABÉNS! Empréstimo aprovado!')

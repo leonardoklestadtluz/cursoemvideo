@@ -13,10 +13,12 @@ linha01 = float(input('\nDigite a medida da 1ª linha: '))
 linha02 = float(input('Digite a medida da 2ª linha: '))
 linha03 = float(input('Digite a medida da 3ª linha: '))
 if linha01 == linha02 and linha01 == linha03 and linha02 == linha03:
-    print('\nEquilátero: todos os lados iguais.')
-# elif ((linha01 == linha02 and linha03 != linha01)
-#       and (linha03 != linha02 and linha02 == linha03)
-#       and (linha01 != linha02 and linha01 != linha03)):
-#             print('\nIsósceles: dois lados iguais.')
-elif linha01 != linha02 and linha02 != linha03 and linha01 != linha03:
-    print('\nEscaleno: todos os lados diferentes.')
+    print('\nAs linhas acima formam um triagulo ', end='')
+    if linha01 == linha02 == linha03:
+        print('EQUILATERO')
+    elif linha01 != linha02 != linha03 != linha01:
+        print('ESCALENO')
+    else:
+        print('ISÓSCELES')
+else:
+    print('\nAs linhas acima não podem formar um triângulo.')

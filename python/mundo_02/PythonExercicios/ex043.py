@@ -30,8 +30,8 @@ if seuImc < 18.5:
 elif seuImc >= 18.5 and seuImc <= 24.9:
     print('- Entre 18.5 e 24.9: Peso ideal')
 elif seuImc >= 25 and seuImc <= 39.9:
-    print('- 25 até 39.9: Sobrepeso')
+    print('- Entre 25 até 39.9: Sobrepeso')
 elif seuImc >= 30 and seuImc <= 39.9:
-    print('- 30 até 39.9: Obesidade')
+    print('- Entre 30 até 39.9: Obesidade')
 else:
     print('- Acima de 40: Obesidade mórbida')
