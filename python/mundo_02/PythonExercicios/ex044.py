@@ -9,11 +9,10 @@ considerando seu PREÇO NORMAL e CONDIÇÃO DE PAGAMENTO:
 """
 precoInformado = float(input('Informe o preço do produto R$ '))
 acrecimoJuros = (20 * precoInformado) / 100
-condicao1 = ((10 * precoInformado) / 100) + precoInformado
-condicao2 = ((5 * precoInformado) / 100) + precoInformado
-condicao3 = (precoInformado / 2) + precoInformado # CORRIGIR!! ESTÁ INFORMANDO TOTAL MAIOR DO QUE DEVERIA
+condicao1 = precoInformado - ((10 * precoInformado) / 100)
+condicao2 = precoInformado - ((5 * precoInformado) / 100)
+condicao3 = (precoInformado / 2) * 2
 condicao4 = ((precoInformado / 3) + acrecimoJuros) + precoInformado
-# print(precoInformado)
 print('\n**** Condição de Pagamento ****\n'
       '1 - à vista dinheiro/ cheque: 10% de desconto\n'
       '2 - à vista no cartão: 5% de desconto\n'
@@ -29,18 +28,5 @@ elif condicaoPagamento == 3:
 elif condicaoPagamento == 4:
     print(f'\nValor total de sua compra ficou em R$ {condicao4:.2f}')
 else:
-    print(f'\nCondição de pagamento: {condicaoPagamento} inválida. '
-          f'\nEscolha uma das opções informadas.')
-
-
-
-
-
-
-
-
-
-# print(f'{condicao1:.2f}')
-# print(f'{condicao2:.2f}')
-# print(f'{condicao3:.2f}')
-#print(f'{condicao4:.2f}')
+    print(f'\nCondição de pagamento: {condicaoPagamento} inválida! '
+          f'\nEscolha uma das condições disponíveis.')
