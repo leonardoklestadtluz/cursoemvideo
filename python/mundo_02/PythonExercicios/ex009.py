@@ -3,11 +3,8 @@
     e mostre na tela sua tabuada.
 """
 numero = int(input('Digite qualquer número inteiro: '))
-
 print('=' * 28)
-
 print(f'*** TABUADA DO NÚMERO {numero} ***')
-
 print(f'{numero} x 0 = {numero * 0}')
 print(f'{numero} x 1 = {numero * 1}')
 print(f'{numero} x 2 = {numero * 2}')
@@ -19,5 +16,4 @@ print(f'{numero} x 7 = {numero * 7}')
 print(f'{numero} x 8 = {numero * 8}')
 print(f'{numero} x 9 = {numero * 9}')
 print(f'{numero} x 10 = {numero * 10}')
-
 print('=' * 28)
