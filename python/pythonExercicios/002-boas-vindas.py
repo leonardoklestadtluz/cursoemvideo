@@ -1,4 +1,5 @@
 #002 Faça um programa que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas na tela.
+print('\n***** BOAS -VINDAS *****\n')
 
 # >>> MINHA SOLUÇÃO
 #msg = 'É um prazer te conhecer, '

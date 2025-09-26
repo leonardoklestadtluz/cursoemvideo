@@ -1,4 +1,6 @@
 #004 Faça um programa que leia algo pelo teclado ee mostre na tela o seu tipo primitivo e todas as infomrmações possíveis sobre ele.
+print('\n***** INFORMAÇÕES POSSÍVEIS *****\n')
+
 algo = input('Digite algo: ')
 print(f'O tipo primiivo desse valor é: {type(algo)}')
 print(f'Só tem espaços? {algo.isspace()}')
