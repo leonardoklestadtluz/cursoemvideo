@@ -18,7 +18,7 @@ print('$' * 20)
 nota1 = float(input('Digite a 1ª nota: '))
 nota2 = float(input('Digite a 2ª nota: '))
 mediaAluno = (nota1 + nota2) / 2
-if mediaAluno < 5.0:
+if mediaAluno < 5.8:
     print('REPROVADO')
 elif mediaAluno >= 5.9 and mediaAluno < 6.9:
     print('RECUPERAÇÃO')

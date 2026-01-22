@@ -10,17 +10,14 @@ print('=-=' * 8)
 print('APROVANDO EMPRÉSTIMO')
 print('=-=' * 8)
 nomeComprador = str(input('\nBEM-VINDO(A)! Me diz seu nome: '))
-valorCasa = float(input(f'Olá {nomeComprador}!\nQual o valor da seu imóvel R$ '))
+valorImovel = float(input(f'Olá {nomeComprador}!\nQual o valor do imóvel R$ '))
 salarioAtual = float(input('Quanto você ganha por mês R$ '))
 anosPagamento = int(input('Em quantos anos pretende pagar? '))
-anoEmMeses = anosPagamento * 12
-percentualSalarial = (salarioAtual * 30) / 100
-print(f'Prestação mensal R$ {percentualSalarial}')
-valorPrestacao = valorCasa / anoEmMeses
+anosEmMeses = anosPagamento * 12 # conversão de anos em meses
+percentualSalarial = (salarioAtual * 30) / 100 # percentual comprometido do salário
+valorPrestacao = valorImovel / anosEmMeses
+print(f'Prestação mensal R$ {valorPrestacao:.2f}')
 if valorPrestacao < percentualSalarial:
     print('PARABÉNS! Empréstimo aprovado!')
 else:
     print('Hum... Que pena! O valor da prestação compromete mais que 30% do seu salário.')
-print(f'Valor mensal R$ {valorPrestacao:.2f}')
-
-

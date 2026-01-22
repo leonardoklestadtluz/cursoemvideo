@@ -12,7 +12,7 @@ print('=-' * 15)
 linha01 = float(input('\nDigite a medida da 1ª linha: '))
 linha02 = float(input('Digite a medida da 2ª linha: '))
 linha03 = float(input('Digite a medida da 3ª linha: '))
-if linha01 == linha02 and linha01 == linha03 and linha02 == linha03:
+if linha01 < linha02 + linha03 and linha02 < linha01 + linha03 and linha03 < linha01 + linha02:
     print('\nAs linhas acima formam um triagulo ', end='')
     if linha01 == linha02 == linha03:
         print('EQUILATERO')
