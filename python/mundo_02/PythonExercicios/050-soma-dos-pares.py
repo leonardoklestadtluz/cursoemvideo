@@ -5,6 +5,7 @@ Se o valor digitado for ÍMPAR, desconsidere-o.
 print('=' * 14)
 print('SOMA DOS PARES')
 print('=' * 14)
+print('Digite seis números, pares e ímpares')
 somaPar = 0
 numOrdinal = 0
 for numero in range(0, 6):
