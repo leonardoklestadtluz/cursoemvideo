@@ -6,9 +6,6 @@ print('='*20)
 print(' VALIDADOR DE DADOS ')
 print('='*20)
 sexo = str(input('Informe um sexo [M/F]: ')).strip().upper()
-while sexo != 'M' and sexo != 'F':
-    if sexo == 'M':
-        sexo
-    else:
-        sexo = str(input('Informe um sexo [M/F]: ')).strip().upper()
-print(f'Sexo digitado: {sexo}')
+while sexo not in 'MmFf':
+    sexo = str(input('Dados inválidos. Por favor, informe seu sexo: ')).strip().upper()
+print(f'Sexo {sexo} registrado com sucesso!')
