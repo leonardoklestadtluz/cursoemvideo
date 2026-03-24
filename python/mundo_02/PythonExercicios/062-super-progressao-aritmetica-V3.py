@@ -10,8 +10,14 @@ primeiro = int(input('1º termo: '))
 razao = int(input('Razão da PA: '))
 termo = primeiro
 cont = 1
-while cont <= 10:
-    print(f'{termo} >>> ', end='')
-    termo += razao
-    cont += 1
-print('PAUSA')
+total = 0
+maisTermos = 10
+while maisTermos != 0:
+    total = total + maisTermos
+    while cont <= total:
+        print(f'{termo} >>> ', end='')
+        termo += razao
+        cont += 1
+    print('PAUSA')
+    maisTermos = int(input('Quantos termos vovê quer mostrar a mais? '))
+print(f'P.A. finalizada com {total} termos mostrados.')
