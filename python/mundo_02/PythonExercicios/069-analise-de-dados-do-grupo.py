@@ -9,6 +9,27 @@ A. quantas pessoas tem mais de 18 anos?
 
 B. quantos homens foram cadastrados?
 
-C. quantas mulçheres tem menos de 20 anos?
+C. quantas mulheres tem menos de 20 anos?
 
 """
+tot18 = totHomens = totMulherMenor20 = 0
+
+while True:
+    idade = int(input("Idade: "))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo? [M/F] ')).upper().strip()[0]
+    if idade > 18:
+        tot18 += 1
+    if sexo == 'M':
+        totHomens += 1
+    if sexo == 'F' and idade < 20:
+        totMulherMenor20 += 1
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N] ')).upper().strip()[0]
+    if resp == 'N':
+        break
+print(f'{tot18} pessoa(s) tem mais de 18 anos.')
+print(f'{totHomens} homem(ns) foi(rão) cadastrado(s).')
+print(f'{totMulherMenor20} mulhere(s) tem menos de 20 anos.')
